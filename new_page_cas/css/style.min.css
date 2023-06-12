@@ -10925,6 +10925,7 @@ h6,
     position: fixed;
     bottom: 24px;
     left: 20px;
+    z-index: 100;
     /* Cambiamos "right" a "left" */
     background-color: #B31942;
     color: #fff;
