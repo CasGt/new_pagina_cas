@@ -9482,7 +9482,7 @@ button.bg-dark:focus {
 
     .mt-lg-0,
     .my-lg-0 {
-        margin-top: 0 !important
+        margin-top: 0 !important;
     }
 
     .mr-lg-0,
@@ -10665,7 +10665,12 @@ a.text-dark:focus {
     }
 
     .container {
-        min-width: 992px !important
+        min-width: 992px !important;
+
+        background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/bg_contacto.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover
     }
 
     .navbar {
@@ -10915,7 +10920,14 @@ h6,
 .page-header,
 .offer,
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/bg_contacto.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.footer_dol {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/bg_dol.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover
