@@ -66,7 +66,7 @@
 .wcs_button_circle .fa {
     line-height: 50px;
     font-size: 25px;
-    margin-right: 0px;
+    margin-right: 01px;
 }
 
 .wcs_button_label {
@@ -96,10 +96,11 @@
 }
 
 .wcs_fixed_right {
+    FONT-VARIANT: JIS04;
     z-index: 999;
     position: fixed;
     bottom: 20px;
-    right: 01%;
+    right: 0.1em; ;
     /* aqui se realiza el ajuste de posicion */
 }
 
