@@ -44,6 +44,7 @@
         timezone                    :   'America/Lima', // When using the date and time from the user browser you can transform it to your current timezone (in case your user is in a different timezone)
         notAvailableMsg             :   'Estamos fuera de horario', // message when its not an available day or once the available hours have passed
         almostAvailableMsg          :   'Estaré disponible pronto', // if today is an available day and before the time starts
+        almostAvailableMsgIng       :   'I will be available soon', // if today is an available day and before the time starts: English
         dialogNotAvailableMsg       :   'Estamos fuera de horario', // message when its not an available day or once the available hours have passed
         dialogAlmostAvailableMsg    :   'Estaré disponible pronto', // if today is an available day and before the time starts
         defaultMsg                  :   'Hola, tengo algunas preguntas sobre esta página: {{url}}!', // default support msg     

@@ -10610,6 +10610,9 @@ nav .navbar .links li:hover .others-sub-menu {
 }
 
 .navbar .links li .sub-menu li {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
     padding: 0 22px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -10629,6 +10632,7 @@ nav .navbar .links li:hover .others-sub-menu {
 }
 
 .navbar .links li .sub-menu .more-sub-menu {
+
     position: absolute;
     top: 0;
     left: 100%;
