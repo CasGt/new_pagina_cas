@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --blue: #007bff;
+    --blue: #590712;
     --indigo: #6610f2;
     --purple: #6f42c1;
     --pink: #e83e8c;
@@ -19,7 +19,7 @@
     --gray: #6c757d;
     --gray-dark: #343a40;
     --primary: #ffba1b;
-    ;
+    
     --secondary: #590712;
     --success: #28a745;
     --info: #17a2b8;
@@ -32,8 +32,10 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: "Montserrat", sans-serif;
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+    --font-family-sans-serif:
+    "Montserrat", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace
 }
 
 *,
@@ -49,7 +51,7 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
-/* NAVBAR */
+/* NAVBAR 
 nav {
     position: fixed;
     top: 0;
@@ -70,7 +72,6 @@ nav .navbar {
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    /* background: red; */
     padding: 0 50px;
 }
 
@@ -114,7 +115,6 @@ nav .navbar .links li a {
 }
 
 nav .navbar .links li .arrow {
-    /* background: red; */
     height: 100%;
     width: 22px;
     line-height: 70px;
@@ -134,6 +134,7 @@ nav .navbar .links li .sub-menu {
     border-radius: 0 0 4px 4px;
     display: none;
     z-index: 2;
+    width: 22rem;
 }
 
 nav .navbar .links li:hover .htmlCss-sub-menu,
@@ -161,7 +162,7 @@ nav .navbar .links li:hover .others-sub-menu {
 }
 
 .navbar .links li .htmlCss-more-sub-menu {
-    /* line-height: 40px; */
+   
 }
 
 .navbar .links li .sub-menu .more-sub-menu {
@@ -191,7 +192,7 @@ nav .navbar .links li:hover .others-sub-menu {
 
     nav .navbar {
         max-height: 70px;
-        /* Ajusta esta altura según tus necesidades */
+        
     }
 
     .navbar .bx-menu {
@@ -284,10 +285,10 @@ nav .navbar .links li:hover .others-sub-menu {
     }
 
     .navbar .links li .sub-menu .more span {
-        /* background: red; */
+     
         display: flex;
         align-items: center;
-        /* justify-content: space-between; */
+       
     }
 
     .links li .sub-menu .more:hover .more-sub-menu {
@@ -317,7 +318,7 @@ nav .navbar .links li:hover .others-sub-menu {
         transform: rotate(90deg);
     }
 }
-
+*/
 article,
 aside,
 figcaption,

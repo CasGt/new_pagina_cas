@@ -28,6 +28,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/style.min.css" rel="stylesheet">
+    
     <!-- Style of the plugin -->
 
     <link rel="stylesheet" href="../plugin/whatsapp-chat-support.css">
@@ -37,7 +38,8 @@
 </head>
 
 <body>
-    <!-- Navbar Start -->
+    <?php include '../navbar.php';?>
+    <!-- Navbar Start 
     <nav>
         <div class="navbar">
             <i class='bx bx-menu'></i>
@@ -53,21 +55,30 @@
                         <a href="#">ACADEMICO</a>
                         <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
                         <ul class="htmlCss-sub-menu sub-menu">
-                            <li><a href="#">PROYECTOS DE INVESTIGACION</a></li>
-                            <li><a href="#">BENEFICIOS DE LA LECTURA</a></li>
-                            <li><a href="#">CALENDARIOS</a></li>
-                            <li><a href="#">TRABAJANDO EN CAS</a></li>
-                            <li><a href="#">PROGRAMAS</a></li>
-                            <li><a href="#">NUESTRA EDUCACIÓN</a></li>
-                            <li><a href="#">DESARROLLO PROFESIONAL</a></li>
+                            <li><a href="https://www.cas.edu.gt/CAS/pages/projects/">PROYECTOS DE INVESTIGACION</a></li>
+                            <li><a href="https://cas.edu.gt/docs/BeneficiosDeLectura/RtP_Reading_Spanish_1.pdf">BENEFICIOS DE LA LECTURA</a></li>
+                            <li><a href="https://cas.edu.gt/CAS/pages/calendar/">CALENDARIOS</a></li>
+                            <li><a href="https://cas.edu.gt/CAS/pages/workingInCAS/">TRABAJANDO EN CAS</a></li>
                             <li class="more">
-                                <span><a href="#">MAS INFORMACION</a>
+                                <span><a href="#">PROGRAMAS</a>
                                     <i class='bx bxs-chevron-right arrow more-arrow'></i>
                                 </span>
                                 <ul class="more-sub-menu sub-menu">
-                                    <li><a href="#">OTHERS</a></li>
-                                    <li><a href="#">PRE-LOADER</a></li>
-                                    <li><a href="#">OTHERS</a></li>
+                                    <li><a href="https://cas.edu.gt/CAS/pages/academicPrograms/preschool.html">PRE-ESCOLAR</a></li>
+                                    <li><a href="https://cas.edu.gt/CAS/pages/academicPrograms/primary.html">PRIMARIA</a></li>
+                                    <li><a href="https://cas.edu.gt/CAS/pages/academicPrograms/middleschool.html">ESCUELA MEDIA</a></li>
+                                    <li><a href="https://cas.edu.gt/CAS/pages/academicPrograms/highschool.html">SECUNDARIA</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://cas.edu.gt/CAS/pages/aboutOurEducation/">NUESTRA EDUCACIÓN</a></li>
+                            
+                            <li class="more">
+                                <span><a href="#">D. PROFESIONAL</a>
+                                    <i class='bx bxs-chevron-right arrow js-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="https://cas.edu.gt/CAS/pages/pd/">ACERCA DE</a></li>
+                                    <li><a href="https://d2l.csod.com/client/d2l/default.aspx">DARKNESS TO LIGHT</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -76,10 +87,20 @@
                         <a href="#">ESTUDIANTES</a>
                         <i class='bx bxs-chevron-down js-arrow arrow'></i>
                         <ul class="js-sub-menu sub-menu">
-                            <li><a href="#"></a>CORREO</li>
-                            <li><a href="#"></a>UNIFORMES</li>
-                            <li><a href="#"></a>CITA CON DOCENTE</li>
-                            <li><a href="#"></a>PORTALES</li>
+                            <li><a href="https://mail.google.com/mail/u/0/"></a>CORREO</li>
+                            <li><a href="https://americanodelsur.spadd.net/en_US/shop"></a>UNIFORMES</li>
+                            <li><a href="https://www.cas.edu.gt/pages/officeHour/"></a>CITA CON DOCENTE</li>
+                            <li class="more">
+                                <span><a href="#">PORTALES</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="https://cas.edu.gt/CAS/pages/pd/">PRE-ESCOLAR</a></li>
+                                    <li><a href="https://d2l.csod.com/client/d2l/default.aspx">PRIMARIA</a></li>
+                                    <li><a href="https://d2l.csod.com/client/d2l/default.aspx">ESCUELA MEDIA</a></li>
+                                    <li><a href="https://d2l.csod.com/client/d2l/default.aspx">SECUNDARIA</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#"></a>OTROS PORTALES</li>
                             <li><a href="#"></a>THINKWAVE</li>
                             <li><a href="#"></a>GUIAS</li>
@@ -112,8 +133,10 @@
         </div>
     </nav>
     <script src="../js/script.js"></script>
-
+-->
     <!-- Navbar End -->
+
+
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
@@ -131,7 +154,7 @@
                 <div class="carousel-item">
                     <img class="w-100" src="../img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="text-primary font-weight-medium m-0" data-aos="fade-up-left">Una Escuela donde el
+                        <h2 class="text-primary font-weight-medium m-0" data-aos="fade-up-left">Una escuela donde el
                             aprendizaje cobra vida</h2>
                         <h1 class="display-1 text-white m-0" data-aos="fade-up-left">SOMOS CAS</h1>
                         <!-- <h2 class="text-white m-0">* SINCE 1950 *</h2> -->
@@ -165,7 +188,7 @@
                 <h4 class="text-primary text-uppercase">Sobre nosotros</h4>
                 <h1 class="display-4">Sirviendo desde 1995 </h1>
                 <h5 class="mb-3">Con el propósito de ayudar a encontrar soluciones a los problemas del país, se crearon
-                    CAS y Campus Sur para fortalecer el campo educativo. El CAS fue autorizado por el Ministerio de
+                    CAS y Campus Sur para fortalecer el campo educativo. CAS fue autorizado por el Ministerio de
                     Educación en enero de 1995, brindando flexibilidad en sus procedimientos y programas, lo que permite
                     el desarrollo del currículo y la evaluación, así como la formación de docentes. CAS ha brindado
                     excelencia académica durante más de 25 años para mejorar la educación en Guatemala.
@@ -175,9 +198,7 @@
                 <div class="col-lg-4 py-0 py-lg-5" data-aos="fade-right">
                     <h1 class="mb-3">Nuestra Misión</h1>
 
-                    <p>Formar estudiantes, orientando el desarrollo de sus competencias bilingües, académicas, sociales
-                        y profesionales y fomentando el crecimiento de sus valores como ciudadanos comprometidos con la
-                        sociedad y el medio ambiente. Mata, comprometidos con el desarrollo de sus comunidades.</p>
+                    <p>Educar y guiar a estudiantes bilingües en el desarrollo de sus valores, intereses, destrezas académicas y sociales, proporcionándoles las herramientas para ser profesionales preparados y ciudadanos comprometidos con sus comunidades y el medio ambiente, y creando un impacto positivo en el mundo.</p>
                     <a href="" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Más información</a>
                 </div>
                 <div class="col-lg-4 py-5 py-lg-0">
@@ -187,9 +208,7 @@
                 </div>
                 <div class="col-lg-4 py-0 py-lg-5" data-aos="fade-left">
                     <h1 class="mb-3">Nuestra Visión</h1>
-                    <p>Ser el líder en educación innovadora en la región Costa Sur de Guatemala, brindando a los
-                        estudiantes una experiencia académica de calidad que los prepare para la educación superior y la
-                        ciudadanía global, comprometidos con el desarrollo de sus comunidades.</p>
+                    <p>Ser la institución educativa líder en la Costa Sur de Guatemala, que provee a los estudiantes una experiencia académica de calidad que los prepara para la educación universitaria y ciudadanía global, contribuyendo al desarrollo de la innovación educativa en la región.</p>
                     <a href="" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Más información</a>
                     <!-- <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>
                     <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>
@@ -235,7 +254,7 @@
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-chess service-icon"></i>AJEDREZ</h4>
-                            <p class="m-0">CAS promueve el ajedrez dentro de los clubes para niños de 4to grado en
+                            <p class="m-0">CAS promueve el ajedrez dentro de clubes para niños de 4to grado en
                                 adelante, y también se ofrece como una actividad extraescolar para padres y maestros.
                             </p>
                         </div>
@@ -291,7 +310,7 @@
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-check-square service-icon"></i>REUNIÓN MATUTINA</h4>
-                            <p class="m-0">Es un bloque de 20 minutos por la mañana donde los estudiantes pueden
+                            <p class="m-0">Un espacio de 20 minutos por la mañana donde los estudiantes pueden
                                 reunirse con su maestro guía para discutir los próximos eventos, los valores de CAS y
                                 también participar en la lectura en silencio o en grupo. Es un momento para organizarse
                                 y prepararse para un día de aprendizaje.</p>
