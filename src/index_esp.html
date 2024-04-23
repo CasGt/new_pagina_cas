@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAS Esp</title>
+    <!-- Include Tailwind CSS -->
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../plugin/components/Font Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../plugin/whatsapp-chat-support.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-red-950 text-white">
+        <div class="container mx-auto flex justify-between items-center py-4 px-12">
+            <div class="logo">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse logo-toggle">
+                    <img src="../img/logo_png_white.png" alt="Logo" class="w-12 h-12 object-contain" />
+                </a>
+            </div>
+            <div class="nav-links hidden lg:block">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-300">HOME</a></li>
+                    <li class="relative">
+                        <a href="#" class="hover:text-gray-300">ACADEMICS</a>
+                        <button class="dropdown-toggle ml-1 focus:outline-none">
+                            <i class='bx bxs-chevron-down text-lg'></i>
+                        </button>
+                        <ul class="submenu hidden absolute left-0 mt-2 bg-gray-800 text-white rounded-lg shadow-lg">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">RESEARCH PROJECTS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">BENEFITS OF READING</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">CALENDARS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">WORKING AT CAS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">PROGRAMS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">OUR EDUCATION</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">PROFESSIONAL DEVELOPMENT</a></li>
+                            <li class="more relative">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-700">More</a>
+                                <button class="more-toggle ml-1 focus:outline-none">
+                                    <i class='bx bxs-chevron-right text-lg'></i>
+                                </button>
+                                <ul
+                                    class="more-submenu hidden absolute left-full top-0 mt-0 bg-gray-800 text-white rounded-lg shadow-lg">
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">NEUMORPHISM</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">PRE-LOADER</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">OTHERS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="hover:text-gray-300">STUDENTS</a>
+                        <button class="dropdown-toggle ml-1 focus:outline-none">
+                            <i class='bx bxs-chevron-down text-lg'></i>
+                        </button>
+                        <ul class="submenu hidden absolute left-0 mt-2 bg-gray-800 text-white rounded-lg shadow-lg">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">MAIL</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">UNIFORMS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">APPOINTMENT WITH TEACHER</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">PORTALS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">OTHER PORTALS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">THINKWAVE</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">GUIDELINES</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">WELLNESS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">REQUEST INTERNET ACCESS</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="hover:text-gray-300">CAS</a>
+                        <button class="dropdown-toggle ml-1 focus:outline-none">
+                            <i class='bx bxs-chevron-down text-lg'></i>
+                        </button>
+                        <ul class="submenu hidden absolute left-0 mt-2 bg-gray-800 text-white rounded-lg shadow-lg">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">YEARBOOK</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">MAGAZINE</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">CAS NEWS</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">CAS PAYMENT</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">INTRANET</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">CURRICULUM</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="hover:text-gray-300">ADMISSIONS</a></li>
+                    <li><a href="#" class="hover:text-gray-300">SCHOLARSHIPS</a></li>
+                    <li><a href="#" class="hover:text-gray-300">COVID-19</a></li>
+                    <li><a href="#" class="hover:text-gray-300">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Botón flotante de idioma -->
+<div class="fixed bottom-8 left-8 z-50">
+    <a  href="./index.html" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+        Inglés
+    </a>
+</div>
+
+    <!-- Portada -->
+    <div class="main-content h-screen">
+        <div id="indicators-carousel" class="relative w-full h-full" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-full overflow-hidden">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <div class="absolute inset-0">
+                        <img src="../img/carousel-1.jpg" class="absolute inset-0 w-full h-full object-cover" alt="...">
+                        <div class="bg-black absolute inset-0 opacity-50"></div> <!-- Capa con filtro negro -->
+
+                    </div>
+                    <div
+                        class="carousel-caption absolute inset-0 flex flex-col items-center justify-center text-center" >
+                        <h2 class="text-lg md:text-xl lg:text-4xl text-primary text-white font-weight-medium shadow-md m-0"
+                            >Forjando mentes brillantes</h2>
+                        <h1 class="text-xl md:text-2xl lg:text-6xl text-yellow-500 font-bold shadow-md m-0"
+                            >SOMOS CAS</h1>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="absolute inset-0">
+                        <img src="../img/carousel-2.jpg" class="absolute inset-0 w-full h-full object-cover" alt="...">
+                        <div class="bg-black absolute inset-0 opacity-50"></div> <!-- Capa con filtro negro -->
+                    </div>
+                    <div
+                        class="carousel-caption absolute inset-0 flex flex-col items-center justify-center text-center">
+                        <h2 class="text-lg md:text-xl lg:text-4xl text-primary text-white font-weight-medium shadow-md m-0"
+                           >Un colegio donde el aprendizaje cobra vida</h2>
+                        <h1 class="text-xl md:text-2xl lg:text-6xl text-yellow-500 font-bold shadow-md m-0"
+                            >SOMOS CAS</h1>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="absolute inset-0">
+                        <img src="../img/carousel-3.jpg" class="absolute inset-0 w-full h-full object-cover" alt="...">
+                        <div class="bg-black absolute inset-0 opacity-50"></div> <!-- Capa con filtro negro -->
+                    </div>
+                    <div
+                        class="carousel-caption absolute inset-0 flex flex-col items-center justify-center text-center">
+                        <h2 class="text-lg md:text-xl lg:text-4xl text-primary text-white font-weight-medium shadow-md m-0"
+                            >Abriendo puertas al futuro</h2>
+                        <h1 class="text-xl md:text-2xl lg:text-6xl text-yellow-500 font-bold shadow-md m-0"
+                            >SOMOS CAS</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 rounded-full" aria-current="true"
+                    aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 rounded-full" aria-current="false"
+                    aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 rounded-full" aria-current="false"
+                    aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+
+                <svg class="w-6 h-6 md:w-6 md:h-6 lg:w-10 lg:h-10 text-white text-white-800 rtl:rotate-180"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+
+                <svg class="w-6 h-6 md:w-6 md:h-6 lg:w-10 lg:h-10 text-white text-white-800 rtl:rotate-180"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Seccion mas sobre nosotros -->
+    <section class="py-16 bg-white" >
+        <div class="container mx-auto px-12">
+            <!-- Línea vertical -->
+            <div class="w-1 h-12 bg-yellow-500 mx-auto mb-2"></div>
+            <div class="flex flex-col items-center justify-center">
+                <!-- Título -->
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl text-yellow-500" data-aos="zoom-in">Sobre nosotros</h2>
+                    <h1 class="text-5xl text-red-950 font-bold" data-aos="zoom-in">Sirviendo desde 1995</h1>
+                    <p class="text-1.8xl text-red-950 mt-4" data-aos="zoom-in">Con el propósito de ayudar a encontrar soluciones a los problemas del país, se crearon
+                        CAS y Campus Sur para fortalecer el campo educativo. CAS fue autorizado por el Ministerio de
+                        Educación en enero de 1995, brindando flexibilidad en sus procedimientos y programas, lo que permite
+                        el desarrollo del currículo y la evaluación, así como la formación de docentes. CAS ha brindado
+                        excelencia académica durante más de 25 años para mejorar la educación en Guatemala.</p>
+                </div>
+                <!-- Columnas en dispositivos móviles -->
+                <div class="flex flex-col md:flex-row justify-center items-center">
+                    <!-- Columna 1 -->
+                    <div class="w-full md:w-1/3 text-left px-4 mb-8 md:mb-0">
+                        <h3 class="text-4xl text-red-950 font-bold mb-4" data-aos="zoom-in">Nuestra Misión</h3>
+                        <p class="text-gray-600 mb-4" data-aos="zoom-in">Educar y guiar a estudiantes bilingües en el desarrollo de sus valores, intereses, destrezas académicas y sociales, proporcionándoles las herramientas para ser profesionales preparados y ciudadanos comprometidos con sus comunidades y el medio ambiente, y creando un impacto positivo en el mundo.
+                        </p>
+                        <button class="bg-red-800 text-white px-4 py-2 rounded" data-aos="zoom-in">Más información</button>
+                    </div>
+                    <!-- Columna 2 (Círculo) -->
+                    <div class="relative flex justify-center items-center w-full md:w-1/3 mb-8 md:mb-0">
+                        <div class="w-64 h-64 md:w-80 md:h-80 lg:w-60 lg:h-60 rounded-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="../img/bg_circulo.jpeg" alt="About Image">
+                        </div>
+                    </div>
+                    <!-- Columna 3 -->
+                    <div class="w-full md:w-1/3 text-left px-4">
+                        <h3 class="text-4xl text-red-950 font-bold mb-4" data-aos="zoom-in">Nuestra Visión</h3>
+                        <p class="text-gray-600 mb-4" data-aos="zoom-in">Ser la institución educativa líder en la Costa Sur de Guatemala, que provee a los estudiantes una experiencia académica de calidad que los prepara para la educación universitaria y ciudadanía global, contribuyendo al desarrollo de la innovación educativa en la región.
+                        </p>
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-aos="zoom-in">Más información</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Definición de aprendizaje -->
+    <section class="py-16 bg-white relative">
+        <!-- Div para la imagen de fondo con filtro -->
+        <div class="bg-cover bg-center h-full w-full absolute top-0 left-0 filter brightness-50"
+            style="background-image: url('../img/bg_definition_of_learning.jpeg');"></div>
+
+        <div class="container mx-auto relative">
+            <div class="flex flex-col items-center px-12 justify-center relative">
+                <!-- Título -->
+                <div class="text-center mb-8 relative z-10">
+                    <h2 class="text-5xl text-yellow-500 font-bold " data-aos="zoom-in">Definición del aprendizaje</h2>
+                    <p class="text-1.8xl text-white mt-4" data-aos="zoom-in">El aprendizaje en el CAS es un proceso de transformación
+                        en el que se adquieren conocimientos, se despierta la conciencia y se obtienen habilidades que empoderan
+                        a los estudiantes para mejorar y comprometerse de lleno con sus comunidades, su país y el mundo a través
+                        de pensamiento crítico, solución de problemas y colaboración. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección iniciativas-->
+    <div class="container-fluid pt-5">
+        <div class="container mx-auto px-12"> <!-- Modificado px-8 para un espaciado más grande -->
+            <!-- Línea vertical -->
+            <div class="w-1 h-12 bg-yellow-500 mx-auto mb-2"></div>
+            <div class="flex flex-col items-center justify-center">
+                <!-- Título -->
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl text-yellow-500">Nuestras iniciativas</h2>
+                    <p class="text-1.8xl text-red-950 mt-4">Con la finalidad de preparar líderes bilingües con pensamiento crítico y comprometidos
+                        con el desarrollo de su comunidad, contamos con la mejor experiencia de calidad que los prepara para
+                        la educación universitaria y ciudadanía global.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Columna 1 -->
+                <div class="mb-5" data-aos="zoom-in">
+                    <!-- Subsección 1 -->
+                    <div class="flex items-center mb-4">
+                        <div class="w-1/3">
+                            <img class="w-full mb-3 sm:mb-0" src="../img/service-1.jpg" alt="">
+                        </div>
+                        <div class="w-2/3 ml-4">
+                            <h4 class="flex items-center"><i class="fa fa-chess service-icon"></i>AJEDREZ</h4>
+                            <p class="m-0">CAS promueve el ajedrez dentro de clubes para niños de 4to grado en
+                                adelante, y también se ofrece como una actividad extraescolar para padres y maestros.</p>
+                        </div>
+                    </div>
+                    <!-- Subsección 2 -->
+                    <div class="flex items-center mb-4" data-aos="zoom-in">
+                        <div class="w-1/3">
+                            <img class="w-full mb-3 sm:mb-0" src="../img/service-2.jpg" alt="">
+                        </div>
+                        <div class="w-2/3 ml-4">
+                            <h4 class="flex items-center"><i class="fa fa-robot service-icon"></i>ROBOTICA</h4>
+                            <p class="m-0">La propuesta ideal para aprender jugando y potenciar la creatividad,
+                                desarrollar la lógica matemática, la organización espacial, la direccionalidad y el
+                                pensamiento creativo.</p>
+                        </div>
+                    </div>
+                    <!-- Subsección 3 -->
+                    <div class="flex items-center mb-4" data-aos="zoom-in">
+                        <div class="w-1/3">
+                            <img class="w-full mb-3 sm:mb-0" src="../img/service-3.jpg" alt="">
+                        </div>
+                        <div class="w-2/3 ml-4">
+                            <h4 class="flex items-center"><i class="fa fa-laptop service-icon"
+                                    aria-hidden="true"></i>NEWSELA</h4>
+                            <p class="m-0">Una poderosa herramienta de aprendizaje con instrucción personalizada que
+                                proporciona recursos de lectura exclusivos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Columna 2 -->
+                <div class="mb-5" data-aos="zoom-in">
+                    <!-- Subsección 4 -->
+                    <div class="flex items-center mb-4">
+                        <div class="w-1/3">
+                            <img class="w-full mb-3 sm:mb-0" src="../img/service-4.jpg" alt="">
+                        </div>
+                        <div class="w-2/3 ml-4">
+                            <h4 class="flex items-center"><i class="fa fa-book service-icon"></i>KHAN ACADEMY</h4>
+                            <p class="m-0">Un recurso virtual destinado a desarrollar o enriquecer el aprendizaje en
+                                materias como
+                                como matemáticas, química y programación. El alumno aprende a su propio ritmo, y
+                                proporciona información valiosa al profesor sobre el progreso de sus alumnos.</p>
+                        </div>
+                    </div>
+                    <!-- Subsección 5 -->
+                    <div class="flex items-center mb-4" data-aos="zoom-in">
+                        <div class="w-1/3">
+                            <img class="w-full mb-3 sm:mb-0" src="../img/service-5.jpg" alt="">
+                        </div>
+                        <div class="w-2/3 ml-4">
+                            <h4 class="flex items-center"><i class="fa fa-check-square service-icon"></i>REUNIÓN MATUTINA
+                            </h4>
+                            <p class="m-0">Un espacio de 20 minutos por la mañana donde los estudiantes pueden
+                                reunirse con su maestro guía para discutir los próximos eventos, los valores de CAS y
+                                también participar en la lectura en silencio o en grupo. Es un momento para organizarse
+                                y prepararse para un día de aprendizaje.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección contacta con nosotros-->
+    <div class="container-fluid my-12 flex justify-center">
+        <div class="container border-primary w-full lg:w-2/3">
+            <div class="reservation position-relative overlay-top overlay-bottom">
+                <div class="lg:flex justify-center">
+                    <!-- Columna con imagen de fondo -->
+                    <div class="lg:w-2/3 lg:order-1 bg-cover ml-4 relative"
+                        style="background-image: url('../img/bg_dol.jpg');">
+                        <!-- Aplicar filtro a la imagen -->
+                        <div class="absolute inset-0 bg-black opacity-50"></div>
+                        <div class="p-5 relative z-10">
+                            <div class="mb-4">
+                                <h1 class="text-5xl display-3 text-yellow-500 font-bold ">Contáctanos</h1>
+                            </div>
+                            <p class="text-white">Te estamos esperando.</p>
+                            <ul class="list-inline text-white m-0">
+                                <li class="py-2 flex items-center"><svg class="w-6 h-6 text-primary mr-3" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Registro</li>
+                                <li class="py-2 flex items-center"><svg class="w-6 h-6 text-primary mr-3" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Solicitud de
+                                    certificaciones.</li>
+                                <li class="py-2 flex items-center"><svg class="w-6 h-6 text-primary mr-3" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Revisión de documentos.</li>
+                                <li class="py-2 flex items-center"><svg class="w-6 h-6 text-primary mr-3" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Y mucho más...</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Columna con el formulario -->
+                    <div class="lg:w-1/3 lg:order-2 mr-4">
+                        <div class="text-center p-5 bg-gray-200 flex flex-col justify-between h-full">
+                            <div>
+                                <h1 class="text-3xl font-bold text-black mb-4 mt-5">Ingresa tu información</h1>
+                                <form class="mb-5">
+                                    <div class="form-group">
+                                        <input type="text"
+                                            class="form-control bg-transparent border border-amber-400 p-4 text-white"
+                                            placeholder="Name" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email"
+                                            class="form-control bg-transparent border border-amber-400 p-4 text-white"
+                                            placeholder="Email" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text"
+                                            class="form-control bg-transparent border border-amber-400 p-4 text-white"
+                                            placeholder="What is your question?" required="required" />
+                                    </div>
+                                </form>
+                            </div>
+                            <button class="btn bg-yellow-400 btn-block font-weight-bold py-3 hover:bg-yellow-500"
+                                type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div
+        class="container-fluid bg-footer-background bg-cover bg-center text-white mt-5 pt-5 pb-10 px-4 lg:px-8 mx-auto flex justify-center items-center relative">
+        <!-- Div para la imagen de fondo con filtro -->
+        <div class="bg-cover bg-center h-full w-full absolute top-0 left-0 filter brightness-50"
+            style="background-image: url('../img/bg.jpg');"></div>
+
+        <div class="container mx-auto relative">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <!-- Columnas de contenido -->
+                <!-- Columna 1 -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-bold mb-4">Colegio Americano del Sur</h4>
+                    <!-- Resto del contenido de la columna 1 -->
+                    <p><i class="fas fa-map-marker-alt mr-2"></i>Km 92.5 Finca Camantulul Santa Lucia Cotz. Escuintla,
+                        Guatemala, C.A.</p>
+                    <p><i class="fas fa-phone-alt mr-2"></i>PBX CAS:<br>+502 4636-1832</p>
+                    <p class="mb-0"><i class="fas fa-phone-alt mr-2"></i>Campus Sur  UVG +502 7955-2800</p>
+                </div>
+                <!-- Columna 2 -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-bold mb-4">Grupo Educativo del Valle</h4>
+                    <!-- Resto del contenido de la columna 2 -->
+                    <p>- Fundación UVG</p>
+                    <p>- Universidad del valle de Guatemala</p>
+                    <p>- Universidad del valle Altiplano</p>
+                    <p>- Colegio Americano de Guatemala</p>
+                    <p>- Del Valle Grupo Educativo</p>
+                    <p>- Código de ética</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-lg text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-lg text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-lg text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-lg text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Columna 3 -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-bold mb-4">Horarios de apertura</h4>
+                    <!-- Resto del contenido de la columna 3 -->
+                    <div>
+                        <h6 class="text-lg font-bold">Lunes - Viernes</h6>
+                        <p>7.00 AM - 3.30 PM</p>
+                    </div>
+                </div>
+                <!-- Columna 4 -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-bold mb-4">CAS News</h4>
+                    <!-- Resto del contenido de la columna 4 -->
+                    <p>Reciba nuestro boletín bimensual</p>
+                    <div class="mt-2">
+                        <div class="flex">
+                            <input type="text" class="bg-gray-900 border border-gray-600 rounded-l-md px-4 py-2 w-full"
+                                placeholder="Your Email">
+                            <button class="bg-blue-500 text-white rounded-r-md px-4 py-2">Inscribirse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Button Whatsapp Structure -->
+    <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+        <div class="wcs_button_label">
+                Contáctanos
+            </div>  
+        <div class="wcs_button wcs_button_circle">
+            <span class="fa fa-whatsapp"></span>
+        </div>  
+     
+        <div class="wcs_popup">
+            <div class="wcs_popup_close">
+                <span class="fa fa-close"></span>
+            </div>
+            <div class="wcs_popup_header">
+                <span class="fa fa-whatsapp"></span>
+                <strong>Admninistración CAS</strong>
+                
+                <div class="wcs_popup_header_description">¿Necesitas ayuda? Chatea con nosotros en Whatsapp</div>
+    
+            </div>  
+            <div class="wcs_popup_input" 
+                data-number="+50254242550"
+                data-availability='{ "monday":"07:00-15:30", "tuesday":"07:00-15:30", "wednesday":"07:7030-15:30", "thursday":"07:00-15:30", "friday":"07:00-15:30" }'>
+                <input type="text" placeholder="Escribir pregunta!" />
+                <i class="fa fa-play"></i>
+            </div>
+           <!-- <div class="wcs_popup_avatar">
+                <img src="https://avatars.githubusercontent.com/janl?s=180" alt="">
+            </div>-->
+        </div>
+    </div>
+    
+    <script src="../plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="../plugin/components/moment/moment.min.js"></script>
+    <script src="../plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+    <script src="../plugin/whatsapp-chat-support.js"></script>
+    <script>
+       $('#button-w').whatsappChatSupport({
+            defaultMsg : '',
+        });
+    </script>
+    <!-- JavaScript -->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/carrousel.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
+
+</body>
+
+</html>
