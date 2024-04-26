@@ -144,8 +144,8 @@
     </nav>
 
     <!-- Menú para dispositivos móviles -->
-    <div id="mobile-menu" class="md:hidden absolute top-16 right-0 bg-red-950 z-50 hidden">
-        <ul class="bg-red-950 flex flex-col space-y-2 z-10">
+    <div id="mobile-menu" class="md:hidden absolute top-16 right-0 bg-red-950 z-50 hidden w-64 h-full text-xl">
+        <ul class="bg-red-950 flex flex-col space-y-2 z-10 ">
             <li class="relative">
                 <a href="#" class="text-white hover:text-yellow-500">Académico</a>
                 <ul class="absolute left-0 top-full hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
@@ -172,12 +172,12 @@
                     </li>
                 </ul>
             </li>
-            <li class="mt-4"><a href="#" class="text-white hover:text-yellow-500">Admisión</a></li>
+            <li class="mt-4 relative"><a href="#" class="text-white hover:text-yellow-500">Admisión</a></li>
             <li><a href="#" class="text-white hover:text-yellow-500">Becas</a></li>
             <li><a href="#" class="text-white hover:text-yellow-500">Contacto</a></li>
             <li class="relative">
                 <a href="#" class="text-white hover:text-yellow-500">Estudiante</a>
-                <ul class="absolute left-0 top-full hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                <ul class="absolute right-0 top-full hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
                     <li><a href="#">Correo</a></li>
                     <li><a href="#">Uniformes</a></li>
                     <li><a href="#">Cita con docente</a></li>
@@ -210,7 +210,7 @@
             </li>
             <li class="relative">
                 <a href="#" class="text-white hover:text-yellow-500">Mi CAS</a>
-                <ul class="absolute left-0 top-full hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                <ul class="absolute right-0 top-full hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
                     <li class="relative">
                         <a href="#" class="hover:text-yellow-500">Anuario</a>
                         <ul class="absolute left-full top-0 hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
@@ -253,7 +253,7 @@
         </ul>
     </div>
 
-    <!-- Script para el funcionamiento del menú -->
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const dropdownToggle = document.querySelectorAll('.relative');
@@ -265,7 +265,15 @@
                     link.addEventListener('mouseenter', function () {
                         const submenu = item.querySelector('ul');
                         if (submenu) {
+                            // Mostrar el submenu debajo del elemento padre
+                            submenu.style.top = '100%';
+                            submenu.style.left = '0';
                             submenu.classList.remove('hidden');
+                            // Ajustar la posición de los elementos siguientes en la lista
+                            const nextItems = getNextItems(item);
+                            nextItems.forEach(nextItem => {
+                                nextItem.style.marginTop = submenu.offsetHeight + 'px';
+                            });
                         }
                     });
                 }
@@ -275,9 +283,25 @@
                     const submenu = item.querySelector('ul');
                     if (submenu) {
                         submenu.classList.add('hidden');
+                        // Restablecer la posición de los elementos siguientes en la lista
+                        const nextItems = getNextItems(item);
+                        nextItems.forEach(nextItem => {
+                            nextItem.style.marginTop = '0';
+                        });
                     }
                 });
             });
+
+            // Función para obtener los elementos siguientes en la lista
+            function getNextItems(item) {
+                const nextItems = [];
+                let nextSibling = item.nextElementSibling;
+                while (nextSibling) {
+                    nextItems.push(nextSibling);
+                    nextSibling = nextSibling.nextElementSibling;
+                }
+                return nextItems;
+            }
 
             // Manejar el evento clic en el botón del menú móvil
             const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -289,9 +313,7 @@
             });
         });
     </script>
-    
-    
-    
+
 
 
     <!-- Botón flotante de idioma -->
