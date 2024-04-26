@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAS Engl</title>
     <!-- Include Tailwind CSS -->
-    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../plugin/components/Font Awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../plugin/whatsapp-chat-support.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -15,94 +15,294 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="bg-red-950 text-white">
-        <div class="container mx-auto flex justify-between items-center py-4 px-12">
-            <div class="logo">
-                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse logo-toggle">
-                    <img src="../img/logo_png_white.png" alt="Logo" class="w-12 h-12 object-contain" />
-                </a>
-            </div>
-            <div class="nav-links hidden lg:block">
-                <ul class="flex space-x-4">
-                    <li><a href="#" class="hover:text-gray-300">HOME</a></li>
-                    <li class="relative">
-                        <a href="#" class="hover:text-gray-300">ACADEMICS</a>
-                        <button class="dropdown-toggle ml-1 focus:outline-none">
-                            <i class='bx bxs-chevron-down text-lg'></i>
-                        </button>
-                        <ul class="submenu hidden absolute left-0 mt-2 bg-gray-800 text-white rounded-lg shadow-lg">
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">RESEARCH PROJECTS</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">BENEFITS OF READING</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">CALENDARS</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">WORKING AT CAS</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">PROGRAMS</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">OUR EDUCATION</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">PROFESSIONAL DEVELOPMENT</a></li>
-                            <li class="more relative">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-700">More</a>
-                                <button class="more-toggle ml-1 focus:outline-none">
-                                    <i class='bx bxs-chevron-right text-lg'></i>
-                                </button>
-                                <ul
-                                    class="more-submenu hidden absolute left-full top-0 mt-0 bg-gray-800 text-white rounded-lg shadow-lg">
-                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">NEUMORPHISM</a></li>
-                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">PRE-LOADER</a></li>
-                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">OTHERS</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="relative">
-                        <a href="#" class="hover:text-gray-300">STUDENTS</a>
-                        <button class="dropdown-toggle ml-1 focus:outline-none">
-                            <i class='bx bxs-chevron-down text-lg'></i>
-                        </button>
-                        <ul class="submenu hidden absolute left-0 mt-2 bg-gray-800 text-white rounded-lg shadow-lg">
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">MAIL</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">UNIFORMS</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">APPOINTMENT WITH TEACHER</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">PORTALS</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">OTHER PORTALS</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">THINKWAVE</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">GUIDELINES</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">WELLNESS</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">REQUEST INTERNET ACCESS</a></li>
-                        </ul>
-                    </li>
-                    <li class="relative">
-                        <a href="#" class="hover:text-gray-300">CAS</a>
-                        <button class="dropdown-toggle ml-1 focus:outline-none">
-                            <i class='bx bxs-chevron-down text-lg'></i>
-                        </button>
-                        <ul class="submenu hidden absolute left-0 mt-2 bg-gray-800 text-white rounded-lg shadow-lg">
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">YEARBOOK</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">MAGAZINE</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">CAS NEWS</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">CAS PAYMENT</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">INTRANET</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">CURRICULUM</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="hover:text-gray-300">ADMISSIONS</a></li>
-                    <li><a href="#" class="hover:text-gray-300">SCHOLARSHIPS</a></li>
-                    <li><a href="#" class="hover:text-gray-300">COVID-19</a></li>
-                    <li><a href="#" class="hover:text-gray-300">CONTACT</a></li>
-                </ul>
+    <nav class="bg-red-950 shadow-md z-20">
+        <div class="container mx-auto py-6 z-50">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#">
+                        <img src="../img/logo_png_white.png" alt="Logo" class="h-8">
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-100 hover:text-yellow-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden md:block z-50">
+                    <ul id="menu" class="flex space-x-6">
+                        <li class="relative">
+                            <a href="#" class="text-gray-100 hover:text-yellow-500">Académico</a>
+                            <ul class="absolute left-0 top-full hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                <li><a href="#">Proyectos de investigación</a></li>
+                                <li><a href="#">Beneficios de lectura</a></li>
+                                <li><a href="#">Calendarios</a></li>
+                                <li><a href="#">Trabajando en CAS</a></li>
+                                <li class="relative">
+                                    <a href="#" class="hover:text-yellow-500">Programas</a>
+                                    <ul class="absolute left-full top-0 hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                        <li><a href="#">Educación de primera infancia</a></li>
+                                        <li><a href="#">Primaria</a></li>
+                                        <li><a href="#">Escuela media</a></li>
+                                        <li><a href="#">Secundaria</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Nuestra educación</a></li>
+                                <li class="relative">
+                                    <a href="#" class="hover:text-yellow-500">Desarrollo profesional</a>
+                                    <ul class="absolute left-full top-0 hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                        <li><a href="#">Acerca de</a></li>
+                                        <li><a href="#">Darkness to light</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="text-gray-100 hover:text-yellow-500">Admisión</a></li>
+                        <li><a href="#" class="text-gray-100 hover:text-yellow-500">Becas</a></li>
+                        <li><a href="#" class="text-gray-100 hover:text-yellow-500">Contacto</a></li>
+                        <li class="relative">
+                            <a href="#" class="text-gray-100 hover:text-yellow-500">Estudiante</a>
+                            <ul class="absolute left-0 top-full hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                <li><a href="#">Correo</a></li>
+                                <li><a href="#">Uniformes</a></li>
+                                <li><a href="#">Cita con docente</a></li>
+                                <li class="relative">
+                                    <a href="#" class="hover:text-yellow-500">Portales</a>
+                                    <ul class="absolute left-full top-0 hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                        <li><a href="#">Pre-escolar</a></li>
+                                        <li><a href="#">Primaria</a></li>
+                                        <li><a href="#">Escuela media</a></li>
+                                        <li><a href="#">Secundaria</a></li>
+                                    </ul>
+                                </li>
+                                <li class="relative">
+                                    <a href="#" class="hover:text-yellow-500">Otros portales</a>
+                                    <ul class="absolute left-full top-0 hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                        <li><a href="#">Manual técnico educación en línea</a></li>
+                                        <li><a href="#">Seguridad informática</a></li>
+                                        <li><a href="#">Recursos de lectura</a></li>
+                                        <li><a href="#">Departamento de orientación</a></li>
+                                        <li><a href="#">Scholastic</a></li>
+                                        <li><a href="#">Tutoriales</a></li>
+                                        <li><a href="#">Biblioteca</a></li>
+                                        <li><a href="#">Desarrollo profesional</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Thinkwave</a></li>
+                                <li><a href="#">Guías</a></li>
+                                <li><a href="#">Wellness 2024</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative">
+                            <a href="#" class="text-gray-100 hover:text-yellow-500">Mi CAS</a>
+                            <ul class="absolute left-0 top-full hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                <li class="relative">
+                                    <a href="#" class="hover:text-yellow-500">Anuario</a>
+                                    <ul class="absolute left-full top-0 hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                        <li><a href="#">2023</a></li>
+                                        <li><a href="#">2022</a></li>
+                                        <li><a href="#">2021</a></li>
+                                        <li><a href="#">2020</a></li>
+                                        <li><a href="#">2019</a></li>
+                                        <li><a href="#">2018</a></li>
+                                        <li><a href="#">2017</a></li>
+                                    </ul>
+                                </li>
+                                <li class="relative">
+                                    <a href="#" class="hover:text-yellow-500">Revista</a>
+                                    <ul class="absolute left-full top-0 hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                        <li><a href="#">2023</a></li>
+                                        <li><a href="#">2022</a></li>
+                                        <li><a href="#">2021</a></li>
+                                    </ul>
+                                </li>
+                                <li class="relative">
+                                    <a href="#" class="hover:text-yellow-500">CAS News</a>
+                                    <ul class="absolute left-full top-0 hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                        <li><a href="#">Periodo 4, 2023</a></li>
+                                        <li><a href="#">Periodo 3, 2023</a></li>
+                                        <li><a href="#">Periodo 2, 2023</a></li>
+                                        <li><a href="#">Periodo 1, 2023</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="text-gray-100 hover:text-yellow-500">Transparencia</a></li>
+                        <li class="relative">
+                            <a href="#" class="text-gray-100 hover:text-yellow-500">Valores</a>
+                            <ul class="absolute right-0 top-full hidden bg-white shadow-md py-2 px-4 space-y-2">
+                                <li><a href="#">Programa de valores</a></li>
+                                <li><a href="#">Código de ética</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
-<!-- Botón flotante de idioma -->
-<div class="fixed bottom-8 left-8 z-50">
-    <a href="./index_esp.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
-        Español
-    </a>
-</div>
+
+    <!-- Menú para dispositivos móviles -->
+    <div id="mobile-menu" class="md:hidden absolute top-16 right-0 bg-red-950 z-50 hidden">
+        <ul class="bg-red-950 flex flex-col space-y-2 z-10">
+            <li class="relative">
+                <a href="#" class="text-white hover:text-yellow-500">Académico</a>
+                <ul class="absolute left-0 top-full hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                    <li><a href="#">Proyectos de investigación</a></li>
+                    <li><a href="#">Beneficios de lectura</a></li>
+                    <li><a href="#">Calendarios</a></li>
+                    <li><a href="#">Trabajando en CAS</a></li>
+                    <li class="relative">
+                        <a href="#" class="hover:text-yellow-500">Programas</a>
+                        <ul class="absolute left-full top-0 hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                            <li><a href="#">Educación de primera infancia</a></li>
+                            <li><a href="#">Primaria</a></li>
+                            <li><a href="#">Escuela media</a></li>
+                            <li><a href="#">Secundaria</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nuestra educación</a></li>
+                    <li class="relative">
+                        <a href="#" class="hover:text-yellow-500">Desarrollo profesional</a>
+                        <ul class="absolute left-full top-0 hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                            <li><a href="#">Acerca de</a></li>
+                            <li><a href="#">Darkness to light</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mt-4"><a href="#" class="text-white hover:text-yellow-500">Admisión</a></li>
+            <li><a href="#" class="text-white hover:text-yellow-500">Becas</a></li>
+            <li><a href="#" class="text-white hover:text-yellow-500">Contacto</a></li>
+            <li class="relative">
+                <a href="#" class="text-white hover:text-yellow-500">Estudiante</a>
+                <ul class="absolute left-0 top-full hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                    <li><a href="#">Correo</a></li>
+                    <li><a href="#">Uniformes</a></li>
+                    <li><a href="#">Cita con docente</a></li>
+                    <li class="relative">
+                        <a href="#" class="hover:text-yellow-500">Portales</a>
+                        <ul class="absolute left-full top-0 hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                            <li><a href="#">Pre-escolar</a></li>
+                            <li><a href="#">Primaria</a></li>
+                            <li><a href="#">Escuela media</a></li>
+                            <li><a href="#">Secundaria</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="hover:text-yellow-500">Otros portales</a>
+                        <ul class="absolute left-full top-0 hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                            <li><a href="#">Manual técnico educación en línea</a></li>
+                            <li><a href="#">Seguridad informática</a></li>
+                            <li><a href="#">Recursos de lectura</a></li>
+                            <li><a href="#">Departamento de orientación</a></li>
+                            <li><a href="#">Scholastic</a></li>
+                            <li><a href="#">Tutoriales</a></li>
+                            <li><a href="#">Biblioteca</a></li>
+                            <li><a href="#">Desarrollo profesional</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Thinkwave</a></li>
+                    <li><a href="#">Guías</a></li>
+                    <li><a href="#">Wellness 2024</a></li>
+                </ul>
+            </li>
+            <li class="relative">
+                <a href="#" class="text-white hover:text-yellow-500">Mi CAS</a>
+                <ul class="absolute left-0 top-full hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                    <li class="relative">
+                        <a href="#" class="hover:text-yellow-500">Anuario</a>
+                        <ul class="absolute left-full top-0 hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2022</a></li>
+                            <li><a href="#">2021</a></li>
+                            <li><a href="#">2020</a></li>
+                            <li><a href="#">2019</a></li>
+                            <li><a href="#">2018</a></li>
+                            <li><a href="#">2017</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="hover:text-yellow-500">Revista</a>
+                        <ul class="absolute left-full top-0 hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2022</a></li>
+                            <li><a href="#">2021</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="hover:text-yellow-500">CAS News</a>
+                        <ul class="absolute left-full top-0 hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                            <li><a href="#">Periodo 4, 2023</a></li>
+                            <li><a href="#">Periodo 3, 2023</a></li>
+                            <li><a href="#">Periodo 2, 2023</a></li>
+                            <li><a href="#">Periodo 1, 2023</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" class="text-white hover:text-yellow-500">Transparencia</a></li>
+            <li class="relative">
+                <a href="#" class="text-white hover:text-yellow-500">Valores</a>
+                <ul class="absolute right-0 top-full hidden bg-gray-100 shadow-md py-2 px-4 space-y-2">
+                    <li><a href="#">Programa de valores</a></li>
+                    <li><a href="#">Código de ética</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Script para el funcionamiento del menú -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownToggle = document.querySelectorAll('.relative');
+
+            dropdownToggle.forEach(item => {
+                const link = item.querySelector('a');
+                if (link) {
+                    // Mostrar submenú en mouseenter
+                    link.addEventListener('mouseenter', function () {
+                        const submenu = item.querySelector('ul');
+                        if (submenu) {
+                            submenu.classList.remove('hidden');
+                        }
+                    });
+                }
+
+                // Ocultar submenú en mouseleave
+                item.addEventListener('mouseleave', function () {
+                    const submenu = item.querySelector('ul');
+                    if (submenu) {
+                        submenu.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Manejar el evento clic en el botón del menú móvil
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+                console.log("¡Se ha presionado el botón del menú móvil!");
+            });
+        });
+    </script>
+    
+    
+    
+
+
+    <!-- Botón flotante de idioma -->
+    <div class="fixed bottom-8 left-8 z-50">
+        <a href="./index_esp.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
+            Español
+        </a>
+    </div>
 
     <!-- Portada -->
-    <div class="main-content h-screen">
-
-
+    <div class="main-content h-screen z-0">
         <div id="indicators-carousel" class="relative w-full h-full" data-carousel="static">
             <!-- Carousel wrapper -->
             <div class="relative h-full overflow-hidden">
@@ -196,7 +396,8 @@
                 <div class="text-center mb-8">
                     <h2 class="text-3xl text-yellow-500" data-aos="fade-up">About Us</h2>
                     <h1 class="text-5xl text-red-950 font-bold" data-aos="fade-up">Serving Since 1995</h1>
-                    <p class="text-1.8xl text-red-950 mt-4" data-aos="fade-up">With the purpose of helping find solutions to the country's
+                    <p class="text-1.8xl text-red-950 mt-4" data-aos="fade-up">With the purpose of helping find
+                        solutions to the country's
                         problems, CAS and Campus Sur were created to strengthen the Guatemalan educational field. CAS
                         was accredited by the Ministry of Education in January 1995, providing flexibility in its
                         procedures and programs to allow for the development of curriculum and evaluation as well as
@@ -206,9 +407,10 @@
                 <!-- Columnas en dispositivos móviles -->
                 <div class="flex flex-col md:flex-row justify-center items-center" data-aos="fade-up">
                     <!-- Columna 1 -->
-                    <div class="w-full md:w-1/3 text-left px-4 mb-8 md:mb-0" >
+                    <div class="w-full md:w-1/3 text-left px-4 mb-8 md:mb-0">
                         <h3 class="text-4xl text-red-950 font-bold mb-4" data-aos="fade-up">Our Mission</h3>
-                        <p class="text-gray-600 mb-4" data-aos="fade-up">To be the leader of innovative education in the South Coast region
+                        <p class="text-gray-600 mb-4" data-aos="fade-up">To be the leader of innovative education in the
+                            South Coast region
                             of Guatemala, providing students with a quality academic experience that prepares them for
                             higher education and global citizenship, committed to the development of their communities.
                         </p>
@@ -264,7 +466,7 @@
             <div class="flex flex-col items-center justify-center">
                 <!-- Título -->
                 <div class="text-center mb-8" data-aos="zoom-out">
-                    <h2 class="text-3xl text-yellow-500" >OUR INITIATIVES</h2>
+                    <h2 class="text-3xl text-yellow-500">OUR INITIATIVES</h2>
                     <p class="text-1.8xl text-red-950 mt-4">With the aim of preparing bilingual leaders with critical
                         thinking skills and a
                         commitment to the development of their community, we offer the best-quality experience to
@@ -416,11 +618,12 @@
 
     <!-- Footer -->
     <section>
-        <div class="container-fluid bg-footer-background bg-cover bg-center text-white mt-5 pt-5 pb-10 px-4 lg:px-8 mx-auto flex justify-center items-center relative">
+        <div
+            class="container-fluid bg-footer-background bg-cover bg-center text-white mt-5 pt-5 pb-10 px-4 lg:px-8 mx-auto flex justify-center items-center relative">
             <!-- Div para la imagen de fondo con filtro -->
             <div class="bg-cover bg-center h-full w-full absolute top-0 left-0 filter brightness-50"
                 style="background-image: url('../img/bg.jpg');"></div>
-    
+
             <div class="container mx-auto relative">
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
                     <!-- Columnas de contenido -->
@@ -428,7 +631,8 @@
                     <div class="mb-8">
                         <h4 class="text-lg font-bold mb-4">American College of the South</h4>
                         <!-- Resto del contenido de la columna 1 -->
-                        <p><i class="fas fa-map-marker-alt mr-2"></i>Km 92.5 Finca Camantulul Santa Lucia Cotz. Escuintla,
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Km 92.5 Finca Camantulul Santa Lucia Cotz.
+                            Escuintla,
                             Guatemala, C.A.</p>
                         <p><i class="fas fa-phone-alt mr-2"></i>PBX CAS:<br>+502 4636-1832</p>
                         <p class="mb-0"><i class="fas fa-phone-alt mr-2"></i>South Campus UVG +502 7955-2800</p>
@@ -466,66 +670,67 @@
                         <p>Receive Our Bi-Monthly Newsletter</p>
                         <div class="mt-2">
                             <div class="flex">
-                                <input type="text" class="bg-gray-900 border border-gray-600 rounded-l-md px-4 py-2 w-full"
+                                <input type="text"
+                                    class="bg-gray-900 border border-gray-600 rounded-l-md px-4 py-2 w-full"
                                     placeholder="Your Email">
                                 <button class="bg-blue-500 text-white rounded-r-md px-4 py-2">Sign Up</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> 
-        </div>  
+            </div>
+        </div>
     </section>
- 
-    
-    <!-- Botón de Whatssap -->
-  <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
-    <div class="wcs_button_label">
-        Contact us
-        </div>  
-    <div class="wcs_button wcs_button_circle">
-        <span class="fa fa-whatsapp"></span>
-    </div>  
- 
-    <div class="wcs_popup">
-        <div class="wcs_popup_close">
-            <span class="fa fa-close"></span>
-        </div>
-        <div class="wcs_popup_header">
-            <span class="fa fa-whatsapp"></span>
-            <strong>Administration CAS</strong>
-            
-            <div class="wcs_popup_header_description">Need help? Chat with us on Whatsapp</div>
 
-        </div>  
-        <div class="wcs_popup_input" 
-            data-number="+50254242550"
-            data-availability='{ "monday":"07:00-15:30", "tuesday":"07:00-15:30", "wednesday":"07:7030-15:30", "thursday":"07:00-15:30", "friday":"07:00-15:30" }'>
-            <input type="text" placeholder="Escribir pregunta!" />
-            <i class="fa fa-play"></i>
+
+    <!-- Botón de Whatssap -->
+    <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+        <div class="wcs_button_label">
+            Contact us
         </div>
-       <!-- <div class="wcs_popup_avatar">
+        <div class="wcs_button wcs_button_circle">
+            <span class="fa fa-whatsapp"></span>
+        </div>
+
+        <div class="wcs_popup">
+            <div class="wcs_popup_close">
+                <span class="fa fa-close"></span>
+            </div>
+            <div class="wcs_popup_header">
+                <span class="fa fa-whatsapp"></span>
+                <strong>Administration CAS</strong>
+
+                <div class="wcs_popup_header_description">Need help? Chat with us on Whatsapp</div>
+
+            </div>
+            <div class="wcs_popup_input" data-number="+50254242550"
+                data-availability='{ "monday":"07:00-15:30", "tuesday":"07:00-15:30", "wednesday":"07:7030-15:30", "thursday":"07:00-15:30", "friday":"07:00-15:30" }'>
+                <input type="text" placeholder="Escribir pregunta!" />
+                <i class="fa fa-play"></i>
+            </div>
+            <!-- <div class="wcs_popup_avatar">
             <img src="https://avatars.githubusercontent.com/janl?s=180" alt="">
         </div>-->
+        </div>
     </div>
-</div>
 
-<script src="../plugin/components/jQuery/jquery-1.11.3.min.js"></script>
-<script src="../plugin/components/moment/moment.min.js"></script>
-<script src="../plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
-<script src="../plugin/whatsapp-chat-support.js"></script>
-<script>
-   $('#button-w').whatsappChatSupport({
-        defaultMsg : '',
-    });
-</script>
+    <script src="../plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="../plugin/components/moment/moment.min.js"></script>
+    <script src="../plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+    <script src="../plugin/whatsapp-chat-support.js"></script>
+    <script>
+        $('#button-w').whatsappChatSupport({
+            defaultMsg: '',
+        });
+    </script>
 
     <!-- JavaScript -->
     <script src="../js/navbar.js"></script>
     <script src="../js/carrousel.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 
 
