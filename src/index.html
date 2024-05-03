@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAS Engl</title>
     <!-- Include Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="../plugin/components/Font Awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../plugin/whatsapp-chat-support.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -705,139 +705,126 @@
         </div>
     </div>
 
-    <!-- Sección de valores -->
-
-    <!-- Contenedor del carrusel -->
+  
     <div class="container mx-auto my-12">
-        <div class="relative overflow-hidden">
-            <div id="carousel" class="flex transition-transform duration-300 ease-in-out flex-wrap">
-                <!-- Tarjetas del carrusel -->
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-1.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 1">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Ética</h3>
+      
+        <div class="flex justify-center"> <!-- Centrar horizontalmente -->
+          <div class="w-full lg:w-3/4 xl:w-2/3"> <!-- Div más pequeño -->
+                <!-- Sección de valores -->
+    <div class="text-center mb-8" data-aos="zoom-out">
+        <h2 class="text-3xl text-red-950">OUR VALUES</h2>
+        <p class="text-1.8xl text-red-950 mt-4">Estos valores fundamentales guían nuestra misión y nos inspiran a ser la mejor versión de nosotros mismos mientras buscamos hacer una diferencia en el mundo que nos rodea.</p>
+    </div>
+            <div class="relative overflow-x-auto scrollbar-thin scrollbar-thumb-gray-200" style="overflow-x: hidden;"> <!-- Ocultar la barra de desplazamiento horizontal -->
+              <div id="carousel" class="flex transition-transform duration-300 ease-in-out">
+                <div class="w-1/6 bg-white shadow-md p-2 rounded-lg flex-none">
+                  <img src="../img/valores/v-1.png" class="w-full h-25 rounded-lg object-cover" alt="Card 1">
+                  <div class="text-center mt-2"></div>
+                </div>
+                <div class="w-1/6 bg-white shadow-md p-2 rounded-lg flex-none">
+                  <img src="../img/valores/v-2.png" class="w-full h-25 rounded-lg object-cover" alt="Card 2">
+                  <div class="text-center mt-2"></div>
+                </div>
+                <div class="w-1/6 bg-white shadow-md p-2 rounded-lg flex-none">
+                  <img src="../img/valores/v-3.png" class="w-full h-25 rounded-lg object-cover" alt="Card 3">
+                  <div class="text-center mt-2"></div>
+                </div>
+                <div class="w-1/6 bg-white shadow-md p-2 rounded-lg flex-none">
+                  <img src="../img/valores/v-4.png" class="w-full h-25 rounded-lg object-cover" alt="Card 4">
+                  <div class="text-center mt-2"></div>
+                </div>
+                <div class="w-1/6 bg-white shadow-md p-2 rounded-lg flex-none">
+                  <img src="../img/valores/v-5.png" class="w-full h-25 rounded-lg object-cover" alt="Card 5">
+                  <div class="text-center mt-2"></div>
+                </div>
+                <div class="w-1/6 bg-white shadow-md p-2 rounded-lg flex-none">
+                  <img src="../img/valores/v-6.png" class="w-full h-25 rounded-lg object-cover" alt="Card 6">
+                  <div class="text-center mt-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    <!-- Sección contacta con nosotros-->
+    <div class="container-fluid my-12 flex justify-center">
+        <div class="container border-primary w-full lg:w-2/3">
+            <div class="reservation position-relative overlay-top overlay-bottom">
+                <div class="lg:flex justify-center">
+                    <!-- Columna con imagen de fondo -->
+                    <div class="lg:w-2/3 lg:order-1 bg-cover ml-4 relative"
+                        style="background-image: url('../img/bg_dol.jpg');">
+                        <!-- Aplicar filtro a la imagen -->
+                        <div class="absolute inset-0 bg-black opacity-50"></div>
+                        <div class="p-5 relative z-10">
+                            <div class="mb-4">
+                                <h1 class="text-5xl display-3 text-yellow-500 font-bold ">Contáctanos</h1>
+                            </div>
+                            <p class="text-white">Te estamos esperando.</p>
+                            <ul class="list-inline text-white m-0">
+                                <li class="py-2 flex items-center"><svg class="w-6 h-6 text-primary mr-3" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Registro</li>
+                                <li class="py-2 flex items-center"><svg class="w-6 h-6 text-primary mr-3" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Solicitud de
+                                    certificaciones.</li>
+                                <li class="py-2 flex items-center"><svg class="w-6 h-6 text-primary mr-3" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Revisión de documentos.</li>
+                                <li class="py-2 flex items-center"><svg class="w-6 h-6 text-primary mr-3" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Y mucho más...</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Columna con el formulario -->
+                    <div class="lg:w-1/3 lg:order-2 mr-4">
+                        <div class="text-center p-5 bg-gray-200 flex flex-col justify-between h-full">
+                            <div>
+                                <h1 class="text-3xl font-bold text-black mb-4 mt-5">Ingresa tu información</h1>
+                                <form class="mb-5">
+                                    <div class="form-group">
+                                        <input type="text"
+                                            class="form-control bg-transparent border border-amber-400 p-4 text-white"
+                                            placeholder="Name" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email"
+                                            class="form-control bg-transparent border border-amber-400 p-4 text-white"
+                                            placeholder="Email" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text"
+                                            class="form-control bg-transparent border border-amber-400 p-4 text-white"
+                                            placeholder="What is your question?" required="required" />
+                                    </div>
+                                </form>
+                            </div>
+                            <button class="btn bg-yellow-400 btn-block font-weight-bold py-3 hover:bg-yellow-500"
+                                type="submit">Enviar</button>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-2.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 2">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Excelencia</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-3.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 3">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Amor y amistad</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-4.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 4">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Amor y amistad</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-5.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 5">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Amor y amistad</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-6.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 6">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Amor y amistad</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-7.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 7">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Amor y amistad</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-8.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 8">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Amor y amistad</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-9.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 9">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Amor y amistad</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-10.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 10">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Amor y amistad</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-11.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 11">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Amor y amistad</h3>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md p-2 rounded-lg flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <img src="../img/valores/v-12.png" class="w-32 h-auto rounded-lg float-left mr-4" alt="Card 12">
-                    <div class="text-center mt-2">
-                        <h3 class="text-lg font-semibold">Amor y amistad</h3>
-                    </div>
-                </div>
-                <!-- Repite las tarjetas según necesites -->
             </div>
         </div>
     </div>
 
 
-    <!-- Scripts -->
-    <script>
-        const carousel = document.getElementById('carousel');
-        const cardsContainer = document.getElementById('carousel');
-        let currentIndex = 0;
-        const totalCards = 14;
-        let interval;
 
-        // Crea el carrusel completo
-        for (let i = 2; i <= totalCards; i++) {
-            const card = document.createElement('div');
-            card.className = 'bg-white shadow-md p-2 rounded-lg flex-none w-1/3';
-            card.innerHTML = `
-                <img src="../img/valores/v-${i}.png" class="w-full h-auto rounded-lg" alt="Card ${i}">
-                <div class="text-center mt-2">
-                    <h3 class="text-lg font-semibold">Card ${i}</h3>
-                </div>
-            `;
-            cardsContainer.appendChild(card);
-        }
-
-        const cards = document.querySelectorAll('#carousel > div');
-
-        // Función para mostrar la siguiente tarjeta
-        function showNextCard() {
-            currentIndex = (currentIndex + 1) % totalCards;
-            carousel.style.transform = `translateX(-${(currentIndex % 3) * (100 / 3)}%)`;
-        }
-
-        // Función para iniciar el carrusel automático
-        function startCarousel() {
-            interval = setInterval(showNextCard, 3000);
-        }
-
-        // Función para detener el carrusel automático
-        function stopCarousel() {
-            clearInterval(interval);
-        }
-
-        // Iniciar carrusel automático al cargar la página
-        startCarousel();
-
-        // Detener el carrusel automático al pasar el mouse sobre el carrusel
-        carousel.addEventListener('mouseover', stopCarousel);
-
-        // Continuar el carrusel automático al retirar el mouse del carrusel
-        carousel.addEventListener('mouseleave', startCarousel);
-    </script>
+  
+  
     <!-- Footer -->
     <section>
         <div
